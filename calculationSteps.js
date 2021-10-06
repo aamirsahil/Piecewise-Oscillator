@@ -128,6 +128,7 @@ StepCalculator.prototype.textCalc = function(index){
         "<br><br> &emsp;&nbsp;= " + this.time[this.index].toFixed(2).toString();
     this.text[1] = this.displacement[this.index-1].toFixed(2).toString() + " <br> &emsp;&nbsp; + (" +
         this.velocity[this.index].toFixed(2).toString() + ") x " + this.h.toFixed(2).toString() +
+        this.velocity[this.index].toFixed(2).toString() + ") x " + this.h.toFixed(2).toString() +
         "<br><br> &emsp;&nbsp;= " + this.displacement[this.index].toFixed(2).toString();
     this.text[2] = this.velocity[this.index-1].toFixed(2).toString() + " <br> &emsp;&nbsp; - (<sup>" + this.k.toFixed(2).toString() + "</sup>/" +
         "<sub>" + this.m.toFixed(2).toString() + "</sub>) x (" + this.displacement[this.index-1].toFixed(2).toString() +

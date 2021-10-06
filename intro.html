@@ -73,9 +73,9 @@
             <div class="card text-center">
               <div class="card-header">System parameters</div>
               <div class="card-body">
-                <div class='mt-1'> <input type="range" id="mass_slider" style="width: 40%; vertical-align: middle;"></input> m = <input id="mass_input" type="number" style="width: 25%;"> </div>
-                <div class='mt-1'> <input type="range" id="springConstant_slider" style="width: 40%; vertical-align: middle;"></input> k = <input id="springConstant_input" type="number" style="width: 25%;"> </div>
-                <div class='mt-1'> <input type="range" id="dampingConstant_slider" style="width: 40%; vertical-align: middle;"></input> c = <input id="dampingConstant_input" type="number" style="width: 25%;"> </div>
+                <div class='mt-1'> <input type="range" autocomplete="off" id="mass_slider" style="width: 40%; vertical-align: middle;"> m = <input autocomplete="off" id="mass_input" type="number" style="width: 25%;"> </div>
+                <div class='mt-1'> <input type="range" autocomplete="off" id="springConstant_slider" style="width: 40%; vertical-align: middle;"> k = <input autocomplete="off" id="springConstant_input" type="number" style="width: 25%;"> </div>
+                <div class='mt-1'> <input type="range" autocomplete="off" id="dampingConstant_slider" style="width: 40%; vertical-align: middle;"> c = <input autocomplete="off" id="dampingConstant_input" type="number" style="width: 25%;"> </div>
               </div>
             </div>
           </div>
@@ -86,8 +86,8 @@
             <div class="card text-center">
               <div class="card-header">Applied Force</div>
               <div class="card-body">
-                <div class='mt-1'> <input type="range" id="excitingMagnitude_slider" style="width: 40%; vertical-align: middle;"></input> F<sub>0</sub> = <input id="excitingMagnitude_input" type="number" style="width: 25%;"> </div>
-                <div class='mt-1'> <input type="range" id="excitingFrequency_slider" style="width: 40%; vertical-align: middle;"></input> ω = <input id="excitingFrequency_input" type="number" style="width: 25%;"> </div>
+                <div class='mt-1'> <input autocomplete="off" type="range" id="excitingMagnitude_slider" style="width: 40%; vertical-align: middle;"> F<sub>0</sub> = <input autocomplete="off" id="excitingMagnitude_input" type="number" style="width: 25%;"> </div>
+                <div class='mt-1'> <input autocomplete="off" type="range" id="excitingFrequency_slider" style="width: 40%; vertical-align: middle;"> ω = <input autocomplete="off" id="excitingFrequency_input" type="number" style="width: 25%;"> </div>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@
             <div class="card text-center">
               <div class="card-header">Auxilary Spring</div>
               <div class="card-body">
-                <div class='mt-1'> <input type="range" id="auxSpringConstant_slider" style="width: 40%; vertical-align: middle;"></input> k' = <input id="auxSpringConstant_input" type="number" style="width: 25%;"> </div>
+                <div class='mt-1'> <input autocomplete="off" type="range" id="auxSpringConstant_slider" style="width: 40%; vertical-align: middle;"> k' = <input autocomplete="off" id="auxSpringConstant_input" type="number" style="width: 25%;"> </div>
               </div>
             </div>
           </div>
@@ -109,8 +109,8 @@
             <div class="card text-center">
               <div class="card-header">Initial Conditions</div>
               <div class="card-body">
-                <div class='mt-1'> <input type="range" id="initialPosition_slider" style="width: 40%; vertical-align: middle;"></input> x<sub>0</sub> = <input id="initialPosition_input" type="number" style="width: 25%;"> </div>
-                <div class='mt-1'> <input type="range" id="initialVelocity_slider" style="width: 40%; vertical-align: middle;"></input> v<sub>0</sub> = <input id="initialVelocity_input" type="number" style="width: 25%;"> </div>
+                <div class='mt-1'> <input autocomplete="off" type="range" id="initialPosition_slider" style="width: 40%; vertical-align: middle;"> x<sub>0</sub> = <input autocomplete="off" id="initialPosition_input" type="number" style="width: 25%;"> </div>
+                <div class='mt-1'> <input autocomplete="off" type="range" id="initialVelocity_slider" style="width: 40%; vertical-align: middle;"> v<sub>0</sub> = <input autocomplete="off" id="initialVelocity_input" type="number" style="width: 25%;"> </div>
               </div>
             </div>
           </div>
@@ -164,7 +164,7 @@
                 </div>
                 <!-- Time Span -->
 
-                <div class='mt-1'> <input type="range" id="timestep_slider" style="width: 40%; vertical-align: middle;"></input> h = <input id="timestep_input" type="number" style="width: 10%;"> </div>
+                <div class='mt-1'> <input autocomplete="off" type="range" id="timestep_slider" style="width: 40%; vertical-align: middle;"> h = <input autocomplete="off" id="timestep_input" type="number" style="width: 10%;"> </div>
 
                 <div class="progress mt-3 height:0.75em">
                   <div id='progress-bar' class="progress-bar progress-bar-striped" style="width:0%; height:0.75em;"></div>

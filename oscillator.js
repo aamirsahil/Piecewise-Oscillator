@@ -35,7 +35,7 @@ function Oscillator(){
 
 /*******************************************************************/
 
-Oscillator.prototype.compute = function(bodyId){
+Oscillator.prototype.compute = function(){
     m = this.mass.value; k = this.springConstant.value; c = this.dampingConstant.value;
     k_aux = this.auxSpringConstant.value;
     F = this.excitingMagnitude.value; ω = this.excitingFrequency.value;

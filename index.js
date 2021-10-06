@@ -51,14 +51,16 @@ function setup(){
 // Update
 
 function update(){
-    oscillator.compute(bodyId);
+    oscillator.compute();
     schematic.update();
     graph.update();
     equation.update();
-    table.update();
-    step.update();
-    graph.checkIndex();
-    schematic.checkIndex();
+    if(bodyId == "numerical"){
+        table.update();
+        step.update();
+        graph.checkIndex();
+        schematic.checkIndex();
+    }
 }
 
 /*********************************************************/
