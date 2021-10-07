@@ -6,14 +6,15 @@ function setupSliders(oscillator){
 
         $("#"+temp_param+"_slider").attr({ min: oscillator[temp_param].min, max: oscillator[temp_param].max, value: oscillator[temp_param].value, step: oscillator[temp_param].step })
             .on("input", function(){
-                $("#"+temp_param+"_input").attr({ value: this.value });
+                $("#"+temp_param+"_input").val(this.value);
                 $( "body" ).trigger({ type: "param_change", param: temp_param, value: this.value });
             })
 
         $("#"+temp_param+"_input").attr({ min: oscillator[temp_param].min, max: oscillator[temp_param].max, value: oscillator[temp_param].value, step: oscillator[temp_param].step })
             .on("input", function(){
-                $("#"+temp_param+"_slider").attr({ value: this.value });
+                $("#"+temp_param+"_slider").val(this.value);
                 $( "body" ).trigger({ type: "param_change", param: temp_param, value: this.value });
             })
     }
+
 }
